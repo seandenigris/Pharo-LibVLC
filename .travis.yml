@@ -7,8 +7,10 @@ notifications:
         on_failure: always
 
 before_install:
-  - sudo apt-get -y install libvlc-dev
+  - sudo apt install snap -y
+  - sudo snap install vlc
   - whereis libvlc
+  - whereis libvlccore
   - echo $PATH
 addons:
   apt:

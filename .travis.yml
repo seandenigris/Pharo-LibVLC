@@ -8,7 +8,7 @@ notifications:
 
 before_install:
   - sudo apt-get -y install libvlc-dev
-  - whereis vlc
+  - whereis libvlc
   - echo $PATH
 addons:
   apt:

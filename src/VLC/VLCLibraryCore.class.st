@@ -45,7 +45,8 @@ VLCLibraryCore >> getCompiler [
 { #category : #'accessing platform' }
 VLCLibraryCore >> initialize [
 	super initialize.
-	self getCompiler
+	Smalltalk os isUnix ifFalse: [ 
+		self getCompiler ]
 ]
 
 { #category : #'accessing platform' }

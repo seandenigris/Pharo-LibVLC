@@ -8,6 +8,8 @@ notifications:
 
 before_install:
   - sudo apt-get -y install vlc
+  - whereis vlc
+  - echo $PATH
 addons:
   apt:
     update: true

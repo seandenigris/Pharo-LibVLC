@@ -678,7 +678,7 @@ VLCLibrary >> unix64LibraryName [
 			| libraryPath |
 			libraryPath := path asFileReference / 'libvlc.so'.
 			libraryPath exists ifTrue: [ ^ libraryPath fullName ] ].
-	self error: 'Cannot locate vlc library. Please check if it installed on your system'
+	self error: 'Cannot locate vlc library. Please check if it installed on your system in: ', 	(#('/usr/lib/i386-linux-gnu' '/usr/lib/x86_64-linux-gnu' '/usr/lib32' '/usr/lib') , ((OSEnvironment current at: 'LD_LIBRARY_PATH' ifAbsent: [ '' ]) substrings: ':') , ((OSEnvironment current at: 'PATH' ifAbsent: [ '' ]) substrings: ':')) asString
 ]
 
 { #category : #'accessing platform' }

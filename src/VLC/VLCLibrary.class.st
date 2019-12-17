@@ -663,7 +663,7 @@ VLCLibrary >> setXWindows: indentifier forMediaPlayer: aMediaPlayer [
 
 { #category : #'accessing platform' }
 VLCLibrary >> unix32LibraryName [
-	#('/usr/lib/i386-linux-gnu' '/usr/lib32' '/usr/lib') , ((OSEnvironment current at: 'LD_LIBRARY_PATH' ifAbsent: [ '' ]) substrings: ':')
+	#('/usr/lib/i386-linux-gnu' '/usr/lib32' '/usr/lib') , ((OSEnvironment current at: 'LD_LIBRARY_PATH' ifAbsent: [ '' ]) substrings: ':') , ((OSEnvironment current at: 'PATH' ifAbsent: [ '' ]) substrings: ':')
 		do: [ :path | 
 			| libraryPath |
 			libraryPath := path asFileReference / 'libvlc.so'.
@@ -673,7 +673,7 @@ VLCLibrary >> unix32LibraryName [
 
 { #category : #'accessing platform' }
 VLCLibrary >> unix64LibraryName [
-	#('/usr/lib/i386-linux-gnu' '/usr/lib32' '/usr/lib') , ((OSEnvironment current at: 'LD_LIBRARY_PATH' ifAbsent: [ '' ]) substrings: ':')
+	#('/usr/lib/i386-linux-gnu' '/usr/lib32' '/usr/lib') , ((OSEnvironment current at: 'LD_LIBRARY_PATH' ifAbsent: [ '' ]) substrings: ':') , ((OSEnvironment current at: 'PATH' ifAbsent: [ '' ]) substrings: ':')
 		do: [ :path | 
 			| libraryPath |
 			libraryPath := path asFileReference / 'libvlc.so'.

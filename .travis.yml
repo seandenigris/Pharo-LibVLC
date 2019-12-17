@@ -7,7 +7,7 @@ notifications:
         on_failure: always
 
 before_install:
-  - sudo apt-get -y install vlc
+  - sudo apt-get -y install vlc-dev
   - whereis vlc
   - echo $PATH
 addons:

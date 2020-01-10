@@ -1,6 +1,14 @@
 # Pharo-LibVLC
 libvlc for Pharo (via FFI)
 
+## Installation
+```smalltalk
+Metacello new
+	baseline: 'VLC';
+	repository: 'github://badetitou/Pharo-LibVLC';
+	load.
+  ```
+
 ## LibVCL Documentation
 
 - [Home Page](https://wiki.videolan.org/LibVLC/)

@@ -1,2 +1,10 @@
 # Pharo-LibVLC
-Binding ffi of libvlc for Pharo 
+libvlc for Pharo (via FFI)
+
+## LibVCL Documentation
+
+- [Home Page](https://wiki.videolan.org/LibVLC/)
+- [Doxygen](https://www.videolan.org/developers/vlc/doc/doxygen/html/group__libvlc.html)
+- [LibVLC Tutorial](https://wiki.videolan.org/LibVLC_Tutorial/)
+- [Video Rendering Example](https://wiki.videolan.org/LibVLC_SampleCode_SDL/)
+- [Index of All Documentation Pages](https://wiki.videolan.org/Category:LibVLC/)
